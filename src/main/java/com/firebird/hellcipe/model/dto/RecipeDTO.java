@@ -3,7 +3,7 @@ package com.firebird.hellcipe.model.dto;
 import java.util.ArrayList;
 
 public class RecipeDTO {
-    private int recipeSeqNum;
+    private int rcpSeq;
     private String rcpNM;
     private String infoEng;
     private String infoCar;
@@ -18,7 +18,7 @@ public class RecipeDTO {
     
     public RecipeDTO(int recipeSeqNum, String rcpNM, String infoEng, String infoCar, String infoPro, String infoFat,
             String attFileNoMain, String attFileNoMk, String rcpPartsDtls, ArrayList<String> manual) {
-        this.recipeSeqNum = recipeSeqNum;
+        this.rcpSeq = recipeSeqNum;
         this.rcpNM = rcpNM;
         this.infoEng = infoEng;
         this.infoCar = infoCar;
@@ -29,12 +29,15 @@ public class RecipeDTO {
         this.rcpPartsDtls = rcpPartsDtls;
         this.manual = manual;
     }
-    public int getRecipeSeqNum() {
-        return recipeSeqNum;
+
+    public int getRcpSeq() {
+        return rcpSeq;
     }
-    public void setRecipeSeqNum(int recipeSeqNum) {
-        this.recipeSeqNum = recipeSeqNum;
+
+    public void setRcpSeq(int rcpSeq) {
+        this.rcpSeq = rcpSeq;
     }
+
     public String getRcpNM() {
         return rcpNM;
     }

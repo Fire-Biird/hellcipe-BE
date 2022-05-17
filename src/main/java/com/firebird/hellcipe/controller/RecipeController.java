@@ -1,5 +1,5 @@
 package com.firebird.hellcipe.controller;
 
-public class RecogntionController {
+public class RecipeController {
     
 }

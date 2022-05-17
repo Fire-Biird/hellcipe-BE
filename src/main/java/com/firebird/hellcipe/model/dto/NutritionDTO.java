@@ -4,12 +4,12 @@ import java.util.Date;
 
 public class NutritionDTO {
     private int userId;
-    private String rcpSeq;
+    private int rcpSeq;
     private Date nutritionDate;
 
     public NutritionDTO() {}
 
-    public NutritionDTO(int userId, String rcpSeq, Date nutritionDate) {
+    public NutritionDTO(int userId, int rcpSeq, Date nutritionDate) {
         this.userId = userId;
         this.rcpSeq = rcpSeq;
         this.nutritionDate = nutritionDate;
@@ -21,10 +21,10 @@ public class NutritionDTO {
     public void setUserId(int userId) {
         this.userId = userId;
     }
-    public String getRcpSeq() {
+    public int getRcpSeq() {
         return rcpSeq;
     }
-    public void setRcpSeq(String rcpSeq) {
+    public void setRcpSeq(int rcpSeq) {
         this.rcpSeq = rcpSeq;
     }
     public Date getNutritionDate() {
